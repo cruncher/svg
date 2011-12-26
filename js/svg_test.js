@@ -3,7 +3,7 @@
 	
 	var doc = jQuery(document),
 	    views = {},
-	    count = 20000,
+	    count = parseInt(window.location.hash.replace('#', '')) || 5000,
 	    n = count,
 	    w = 960,
 	    h = 270,
