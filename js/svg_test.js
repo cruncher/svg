@@ -3,7 +3,7 @@
 	
 	var doc = jQuery(document),
 	    views = {},
-	    count = parseInt(window.location.hash.replace('#', '')) || 5000,
+	    count = parseInt(window.location.hash.replace('#', '')) || 100,
 	    n = count,
 	    w = 960,
 	    h = 270,
@@ -50,7 +50,7 @@
 		n = count;
 		while (n--) {
 			point = points[n];
-			domStr.push('<circle cx="', point.cx, '" cy="', point.cy, '" r="', point.r, '" fill="', point.fill, '" stroke="', point.stroke, '">Yo</circle>');
+			domStr.push('<circle cx="', point.cx, '" cy="', point.cy, '" r="', point.r, '" fill="', point.fill, '" stroke="', point.stroke, '"></circle>');
 		}
 		
 		domStr.push('</svg>');
